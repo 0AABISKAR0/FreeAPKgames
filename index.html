@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Zone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #1e1e2f;
+      color: #fff;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: url('https://example.com/flowers.png') no-repeat center center;
+      background-size: cover;
+      border-radius: 15px;
+    }
+    header h1 {
+      font-size: 2.5em; /* Slightly smaller font size */
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #aaa;
+    }
+    .enter-btn {
+      background-color: #3a86ff;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      font-size: 1em;
+      border-radius: 8px;
+      margin-top: 30px;
+      cursor: pointer;
+    }
+    .game-list {
+      display: none;
+      margin-top: 40px;
+    }
+    .game {
+      background: #2d2d44;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .game h3 {
+      color: #fff;
+    }
+    .game a {
+      color: #3a86ff;
+      text-decoration: none;
+    }
+    .game a:hover {
+      text-decoration: underline;
+    }
+
+    /* Style for different colors on each letter of "Game Zone" */
+    .colorful-name span {
+      display: inline-block;
+      font-size: 2.5em; /* Font size set to 2.5em */
+      font-weight: 600;
+    }
+    .colorful-name .g { color: #ff6347; } /* Tomato */
+    .colorful-name .a1 { color: #3a86ff; } /* Blue */
+    .colorful-name .m { color: #32cd32; } /* LimeGreen */
+    .colorful-name .e1 { color: #ff1493; } /* DeepPink */
+    .colorful-name .z { color: #ff4500; } /* OrangeRed */
+    .colorful-name .o { color: #9932cc; } /* DarkOrchid */
+    .colorful-name .n { color: #ff8c00; } /* DarkOrange */
+    .colorful-name .e2 { color: #800080; } /* Purple */
+
+    .download-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .download-section h2 {
+      font-size: 2em;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .download-section p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    .download-link {
+      font-size: 1.5em;
+      color: #3a86ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header id="home">
+      <h1 class="colorful-name">
+        <span class="g">G</span>
+        <span class="a1">A</span>
+        <span class="m">M</span>
+        <span class="e1">E</span> 
+        <span class="z">Z</span>
+        <span class="o">O</span>
+        <span class="n">N</span>
+        <span class="e2">E</span>
+      </h1>
+      <p>From here, you can get download links for free. 100% working!</p>
+      <button class="enter-btn" onclick="enterSite()">Enter Site</button>
+    </header>
+
+    <div class="game-list" id="games">
+      <div class="download-section">
+        <h2>Download Links</h2>
+
+        <div class="game">
+          <h3>Minecraft</h3>
+          <p>Download: <a href="https://apkpure.com/howto/how-to-download-minecraft-1-21-41-apk-on-android" target="_blank" class="download-link">APKPure</a></p>
+        </div>
+
+        <div class="game">
+          <h3>GTA Vice City</h3>
+          <p>Download: <a href="https://apkpure.com/gta-vice-city-%E2%80%93-netflix/com.netflix.NGP.GTAViceCityDefinitiveEdition" target="_blank" class="download-link">APKPure</a></p>
+        </div>
+
+        <div class="game">
+          <h3>GTA San Andreas</h3>
+          <p>Download: <a href="https://apkpure.com/gta-san-andreas-netflix/com.netflix.NGP.GTASanAndreasDefinitiveEdition" target="_blank" class="download-link">APKPure</a></p>
+        </div>
+
+        <div class="game">
+          <h3>GTA 5 Mobile</h3>
+          <p>Download: <a href="https://apkmodget.com/games/gta-5-mod-apk-1/" target="_blank" class="download-link">APKModGet</a></p>
+        </div>
+
+        <div class="game">
+          <h3>Call of Duty Mobile</h3>
+          <p>Download: <a href="https://apkpure.com/call-of-duty-mobile-season-11/com.activision.callofduty.shooter" target="_blank" class="download-link">APKPure</a></p>
+        </div>
+
+        <div class="game">
+          <h3>Hitman Sniper</h3>
+          <p>Download: <a href="https://apkpure.com/hitman-sniper/com.squareenixmontreal.hitmansniperandroid/download/1.7.108048" target="_blank" class="download-link">APKPure</a></p>
+        </div>
+
+        <div class="game">
+          <h3>Modern Combat 5</h3>
+          <p>Download: <a href="https://www.apkmirror.com/apk/gameloft/modern-combat-5-blackout/" target="_blank" class="download-link">APKMirror</a></p>
+        </div>
+
+        <div class="game">
+          <h3>NOVA Legacy</h3>
+          <p>Download: <a href="https://apkpure.com/nova-legacy-android/com.gameloft.android.ANMP.GloftNOHM" target="_blank" class="download-link">APKPure</a></p>
+        </div>
+
+        <div class="game">
+          <h3>Asphalt 9</h3>
+          <p>Download: <a href="https://apkpure.com/asphalt9-legends-apk/com.gameloft.android.ANMP.GloftA9HM" target="_blank" class="download-link">APKPure</a></p>
+        </div>
+
+        <div class="game">
+          <h3>NBA 2K20</h3>
+          <p>Download: <a href="https://apkcombo.com/nba-2k20/com.nba2k20.game/download/apk" target="_blank" class="download-link">APKCombo</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function enterSite() {
+      document.getElementById('home').style.display = 'none';
+      document.getElementById('games').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
